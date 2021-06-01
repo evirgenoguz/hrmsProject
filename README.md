@@ -11,3 +11,9 @@ Java Kampı Projesi
 Veri tabanını oluşturduktan sonra Katmanlarımızı oluşturduk ve job positions tablosunun içindekileri görmek için kodlarımızı yazdık. Get request sonucunda aldığımız veri
 
 ![6  Gün Ödev Sonu](https://user-images.githubusercontent.com/59138609/117873926-064f2780-b2a9-11eb-9bba-bc76122e5de1.png)
+
+
+# 7. Gün 
+
+ilk olarak apiyle rahat çalışmak için swagger desteğini ekledik.
+
