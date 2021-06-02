@@ -17,3 +17,4 @@ Veri tabanını oluşturduktan sonra Katmanlarımızı oluşturduk ve job positi
 
 ilk olarak apiyle rahat çalışmak için swagger desteğini ekledik.
 
+Mernis Servisi eklendi ve Kayıt olanların kontrol edebiliyoruz.
