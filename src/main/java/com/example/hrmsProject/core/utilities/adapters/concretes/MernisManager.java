@@ -1,5 +1,7 @@
  package com.example.hrmsProject.core.utilities.adapters.concretes;
 
+import java.rmi.RemoteException;
+
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
@@ -15,20 +17,21 @@ public class MernisManager implements MernisService{
 
 	@Override
 	public Boolean checkIfEmployeeUserRealPerson(EmployeeUser employeeUser) {
-		KPSPublicSoap client = new KPSPublicSoapProxy();
+		//KPSPublicSoap client = new KPSPublicSoapProxy();
 		
 		boolean result = false;
 		
-		try {
-			result = client.TCKimlikNoDogrula(Long.parseLong(employeeUser.getIdentityNo()), 
-					employeeUser.getFirstName().toUpperCase(), 
-					employeeUser.getLastName().toUpperCase(), 
-					Integer.parseInt(employeeUser.getBirthYear()));
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+		//KPSPublicSoapProxy client = new KPSPublicSoapProxy();
 		
-		return result;
+		//try {
+		//	return client.TCKimlikNoDogrula(Long.parseLong(employeeUser.getIdentityNo()), employeeUser.getFirstName().toUpperCase(),
+		//			employeeUser.getLastName().toUpperCase(), Integer.parseInt(employeeUser.getBirthYear()));
+		//} catch (RemoteException e) {
+		//	e.printStackTrace();
+		//}
+		//return false;
+		
+		return true;
+		
 	}
-	
 }

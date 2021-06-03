@@ -7,9 +7,20 @@ import com.example.hrmsProject.core.utilities.adapters.abstracts.EmailVerificati
 @Component
 public class EmailVerificationManager implements EmailVerificationService  {
 
+	
 	@Override
 	public Boolean emailVerify(String email) {
 		return true; //direkt true döndürüyorum	
+	}
+
+	@Override
+	public boolean emailDomainVerify(String email, String website) {
+		return true;
+	}
+
+	@Override
+	public String emailSend(String email) {
+		return null;
 	}
 
 }

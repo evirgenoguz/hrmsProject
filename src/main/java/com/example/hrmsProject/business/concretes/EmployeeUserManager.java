@@ -43,9 +43,9 @@ public class EmployeeUserManager implements EmployeeUserService{
 		else if(!this.emailVerificationService.emailVerify(employeeUser.getEmail())) {
 			return new ErrorResult("E mail geçerli değil");
 		}
-		//else if(this.employeeUserDao.existsEmployeeUserByEmail(employeeUser.getEmail())) {
-		//	return new ErrorResult("E mail sistemde zaten kayıtlı");
-		//}
+		else if(this.employeeUserDao.existsEmployeeUserByEmail(employeeUser.getEmail())) {
+			return new ErrorResult("E mail sistemde zaten kayıtlı");
+		}
 		else if(!employeeUser.getPassword().equals(passwordRepeat)) {
 			return new ErrorResult("Şifre tekrarı yanlış");
 		}
