@@ -1,3 +1,4 @@
+
 package com.example.hrmsProject.entities.concretes;
 
 import javax.persistence.Column;

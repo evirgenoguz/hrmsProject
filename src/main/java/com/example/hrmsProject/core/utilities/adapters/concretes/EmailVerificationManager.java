@@ -15,7 +15,13 @@ public class EmailVerificationManager implements EmailVerificationService  {
 
 	@Override
 	public boolean emailDomainVerify(String email, String website) {
-		return true;
+		
+		if(email.contains(website)) {
+			return true;
+		} //if bloğu yerine regex kontrol yapılmalı ama bilmiyorum
+		
+		
+		return false;
 	}
 
 	@Override
