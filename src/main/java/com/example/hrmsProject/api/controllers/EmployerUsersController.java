@@ -16,6 +16,7 @@ import com.example.hrmsProject.entities.concretes.EmployerUser;
 
 @RestController
 @RequestMapping("/api/employerusers")
+//bu zincirin neresinde hata var anlayamadım aq ya
 public class EmployerUsersController {
 	
 	private EmployerUserService employerUserService;
@@ -36,3 +37,4 @@ public class EmployerUsersController {
 	}
 	
 }
+

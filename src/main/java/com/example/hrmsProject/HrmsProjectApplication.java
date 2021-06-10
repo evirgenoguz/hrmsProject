@@ -25,5 +25,8 @@ public class HrmsProjectApplication {
           .apis(RequestHandlerSelectors.basePackage("com.example.hrmsProject"))                                        
           .build();                                           
     }
+	
+	//To - Do
+	//EmployerUsersControllerda hata var bu hata entity'e kadar ilerliyor kontrol et
 
 }

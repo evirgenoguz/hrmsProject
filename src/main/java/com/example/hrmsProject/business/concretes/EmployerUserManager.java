@@ -2,6 +2,9 @@ package com.example.hrmsProject.business.concretes;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
 import com.example.hrmsProject.business.abstracts.EmployerUserService;
 import com.example.hrmsProject.business.abstracts.SystemUserService;
 import com.example.hrmsProject.core.utilities.adapters.abstracts.EmailVerificationService;
@@ -13,6 +16,7 @@ import com.example.hrmsProject.core.utilities.results.SuccessResult;
 import com.example.hrmsProject.dataAccess.abstracts.EmployerUserDao;
 import com.example.hrmsProject.entities.concretes.EmployerUser;
 
+@Service
 public class EmployerUserManager implements EmployerUserService{
 	
 	private EmployerUserDao employerUserDao;
@@ -20,7 +24,7 @@ public class EmployerUserManager implements EmployerUserService{
 	private SystemUserService systemUserService;
 	
 	
-	
+	@Autowired
 	public EmployerUserManager(EmployerUserDao employerUserDao, EmailVerificationService emailVerificationService,
 			SystemUserService systemUserService) {
 		super();
