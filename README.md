@@ -21,6 +21,5 @@ Mernis Servisi eklendi ve Kayıt olanların kontrol edebiliyoruz.
 
 Mernis Sisteminde sıkıntı yaşadığımdan dolayı servisten direkt olarak true döndürterek işlerimi hallettim şimdilik böyle kalacak yardım alarak yapmayı planlıyorum.
 
-7. Gün sonunda neden olduğunu anlayamadığım çünkü aynı şekilde diğer entityleri yazdığım aşağıdaki gibi bir hata alıyorum.
+# 8. Gün
 
-![Hata](https://user-images.githubusercontent.com/59138609/120913093-218d3700-c69d-11eb-8184-e438c3910038.png)
