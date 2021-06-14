@@ -21,7 +21,7 @@ public class EmailVerificationManager implements EmailVerificationService  {
 		} //if bloğu yerine regex kontrol yapılmalı ama bilmiyorum
 		
 		
-		return false;
+		return true;
 	}
 
 	@Override

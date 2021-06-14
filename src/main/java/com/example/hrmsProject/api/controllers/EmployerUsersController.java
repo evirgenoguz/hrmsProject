@@ -35,6 +35,7 @@ public class EmployerUsersController {
 	public DataResult<List<EmployerUser>> getAll(){
 		return this.employerUserService.getAll();
 	}
+
 	
 }
 
